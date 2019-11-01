@@ -2,7 +2,7 @@ package com.designpattern.observer;
 import java.math.BigDecimal;
 import java.util.Map;
 
-public class TopThreePlayerFootballPlayer implements FootballPalyerObserver {
+public class TopThreePlayerFootballPlayer implements FootballPlayerObserver {
 	private FootballPlayer footballPlayer;
 
 	public TopThreePlayerFootballPlayer(FootballPlayer footballPlayer) {

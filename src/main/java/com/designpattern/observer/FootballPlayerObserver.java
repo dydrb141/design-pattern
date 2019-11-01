@@ -1,5 +1,5 @@
 package com.designpattern.observer;
 
-public interface FootballPalyerObserver {
+public interface FootballPlayerObserver {
 	void footballPlayerUpdate();
 }

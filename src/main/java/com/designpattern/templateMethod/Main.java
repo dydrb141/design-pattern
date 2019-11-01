@@ -8,6 +8,4 @@ public class Main {
 		chong.longPassAndKneeTrappingAfterShoot();
 		dock.shortPassAndchestTrappingAfterShoot();
 	}
-
-
 }

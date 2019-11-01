@@ -4,18 +4,18 @@ import java.util.ArrayList;
 import java.util.List;
 
 public abstract class FootballPlayerManager {
-	List<FootballPalyerObserver> observers = new ArrayList<>();
+	List<FootballPlayerObserver> observers = new ArrayList<>();
 	
-	public void attach(FootballPalyerObserver observer) {
+	public void attach(FootballPlayerObserver observer) {
 		observers.add(observer);
 	}
 	
-	public void detach(FootballPalyerObserver observer) {
+	public void detach(FootballPlayerObserver observer) {
 		observers.remove(observer);
 	}
 	
 	public void notifyObservers() {
-		for (FootballPalyerObserver observer : observers) {
+		for (FootballPlayerObserver observer : observers) {
 			observer.footballPlayerUpdate();
 		}
 	}

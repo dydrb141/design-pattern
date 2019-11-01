@@ -26,7 +26,6 @@ public class FootballPlayer extends FootballPlayerManager {
 		        //HashSet으로 받으면 오더링 하는 이유가 없이 순서를 보장하지 않음
 	}
 
-
 	public BigDecimal getFootballPlaySalary(String name) {
 		if (StringUtils.isEmpty(name)) {
 			return new BigDecimal(0);
@@ -34,6 +33,4 @@ public class FootballPlayer extends FootballPlayerManager {
 
 		return Objects.isNull(map.get(name)) ? new BigDecimal(0) : map.get(name);
 	}
-
-
 }
